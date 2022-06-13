@@ -13,8 +13,8 @@ export default class Section1 extends Component {
                         <img src="../../img/foto.jpeg"/>
                     </div>
                     <div class="texto_sobre">
-                        <p>Somos um empresa localizada na cidade de Uberlândia (MG) com foco na venda de  produtos para os seguintes seguimentos: marcenaria, marmoraria, serralheria e vidraçaria. </p>
-                        <p>Wellington Oliveira é fundador da JPW Ferragens e natural da cidade de Uberlândia (MG). Sua experiência no ramo iniciou-se no ano de 1997. Segundo ele, no ano de 2011 decidiu realizar um grande sonho, criar a marca JPW Ferragens. Segundo Wellington, a marca foi idealizada para dar continuidade a um trabalho que já vinha sendo realizado com sucesso e que consistia na construção de uma base de clientes satisfeitos, a partir da entrega de produtos com qualidade e rapidez!</p>
+                        <p>Somos um empresa localizada na cidade de Uberlândia (MG) com foco na venda de  produtos para os seguintes seguimentos: <spam class="negrito">marcenaria</spam>, <spam class="negrito">marmoraria</spam>, <spam class="negrito">serralheria</spam> e <spam class="negrito">vidraçaria.</spam></p>
+                        <p><spam class="negrito">Wellington Oliveira</spam> é fundador da JPW Ferragens e natural da cidade de Uberlândia (MG). Sua experiência no ramo iniciou-se no ano de 1997. Segundo ele, no ano de 2011 decidiu realizar um grande sonho, criar a marca JPW Ferragens. Segundo Wellington, a marca foi idealizada para dar continuidade a um trabalho que já vinha sendo realizado com sucesso e que consistia na construção de uma base de clientes satisfeitos, a partir da entrega de produtos com qualidade e rapidez!</p>
                     </div>
                 </div>
             </div>
