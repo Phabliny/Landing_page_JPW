@@ -9,7 +9,7 @@ export default class Section3 extends Component {
                 <h1>PRINCIPAIS MARCAS</h1>
                 <h2>(TRABALHAMOS COM AS MELHORES MARCAS DO MERCADO)</h2>
                 <div class="marcas">
-                        <img src="../../img/logo_power.png" class="imagem_marca col-dg-3"/>
+                        <img src="../../img/logo_power.png" class="imagem_marca col-dg-2"/>
                         <img src="../../img/logo_kisafix.jpeg" class="imagem_marca col-dg-2"/>
                         <img src="../../img/logo_orbi.png" class="imagem_marca col-dg-2"/>
                         <img src="../../img/logo_alltape.png" class="imagem_marca col-dg-2"/>
