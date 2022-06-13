@@ -46,7 +46,7 @@ main h2 {
     font-size: 1.2rem;
 }
 .caixa{
-    width: 350px;
+    width: 80vw;
     margin-top: 1.5vw;
     margin-left: auto;
     margin-right: auto;
@@ -66,8 +66,8 @@ main h2 {
     font-weight: bolder;
 }
 .foto_sobre img{
-    width: 250px;
-    border-radius: 200px;
+    width: 50vw;
+    border-radius: 200vw;
 }
 .texto_sobre p {
     font-family: 'Barlow', sans-serif;
@@ -169,20 +169,20 @@ footer{
         padding: 0px;
     }
     .caixa{
-        width: 150vh;
+        width: 55vw;
         flex-direction: row;
     }
     .texto_sobre {
         margin-top: 0vh;
-        margin-left: 8vh;
-        margin-right: 5vh;
+        margin-left: 4vw;
+        margin-right: 3vw;
     }
     .foto_sobre img{
-        width: 40vh;
+        width: 25vw;
         border-radius: 0px;
     }
     .marcas{
-        width: 150vh;
+        width: 55vw;
         margin-top: 1.5vw;
         margin-left: auto;
         margin-right: auto;
