@@ -6,7 +6,7 @@ export default class Section3 extends Component {
     render() {
         return (
             <div class="container py-5">
-                <div class="row justify-content-center align-items-center py-4">
+                <div class="row justify-content-center align-items-center py-5">
                     <h1>PRINCIPAIS MARCAS</h1>
                     <h2>(TRABALHAMOS COM AS MELHORES MARCAS DO MERCADO)</h2>
                     <div class="marcas d-flex flex-row justify-content-center align-items-center flex-wrap col-lg-10 mt-3 col-sm-10 col-1">

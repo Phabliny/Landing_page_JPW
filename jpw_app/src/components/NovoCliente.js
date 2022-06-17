@@ -5,7 +5,7 @@ const NovoCliente = () => {
   const estadoInicialCliente = {
     id: null,
     nome: "",
-    telefone: "",
+    telefone: ""
   };
   const [cliente, setCliente] = useState(estadoInicialCliente);
   const [submitted, setSubmitted] = useState(false);
@@ -23,7 +23,7 @@ const NovoCliente = () => {
   const enviarCliente = () => {
     var data = {
       nome: cliente.nome,
-      telefone: cliente.telefone,
+      telefone: cliente.telefone
     };
     console.log(data);
     api
@@ -33,6 +33,7 @@ const NovoCliente = () => {
           id: response.data.id,
           nome: response.data.nome,
           telefone: response.data.telefone,
+          localDateTime: response.data.localDateTime
         });
         setSubmitted(true);
         console.log(response.data);
