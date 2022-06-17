@@ -9,7 +9,7 @@ export default class Elemento_generico extends Component {
     render() {
         return (
             <div class="elemento_footer">
-                    <img src={this.state.elementos[this.props.id].img} width="30px"/>
+                    <img src={this.state.elementos[this.props.id].img} width="50px" height="50px" margin-top="30px"/>
                     <div class="na_coluna">
                     <h5>{this.state.elementos[this.props.id].titulo}</h5>
                     <p>{this.state.elementos[this.props.id].paragrafo}</p>  

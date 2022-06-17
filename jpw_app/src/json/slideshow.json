@@ -1,0 +1,16 @@
+{
+    "slideshow":[
+        {
+            "img": "../../img/locali.png",
+            "titulo": "ONDE ESTAMOS?"
+        },
+        {
+            "img": "../../img/telefone.png",
+            "titulo": "FALE CONOSCO"
+        },
+        {
+            "img": "../../img/email.png",
+            "titulo": "EMAIL"
+        }
+]
+}
