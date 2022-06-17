@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import slideshow from '../json/slideshow.json'
 
-export default class Elemento_generico extends Component {
+export default class SlideShow extends Component {
     constructor(props){
         super(props);
         this.state = slideshow
@@ -19,8 +19,8 @@ export default class Elemento_generico extends Component {
         );
     }
     componentDidMount(){
-        function comeco(){
-            document.getElementById('imgId').src = array1[0]
+            function comeco(){
+            document.getElementById('imgId').src = slideshow[0]
             document.form.texto.value="0"
             }
             
@@ -37,7 +37,7 @@ export default class Elemento_generico extends Component {
             }
             
             function regular(){
-            document.getElementById('imgId').src = array1[document.form.texto.value];
+            document.getElementById('imgId').src = slideshow[document.form.texto.value];
             setTimeout("regular()", 1)
             }
     }
