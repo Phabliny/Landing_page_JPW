@@ -15,7 +15,6 @@ export default class Main extends Component {
           <Section_produtos/>
           <Section_marcas/>
           <Section_loja_movel/>
-          <Section_formulario/>
       </main>
     )
   }
