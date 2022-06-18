@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as api from "../services/Endpoints";
+import '../css/style.css'
 
 const NovoCliente = () => {
   const estadoInicialCliente = {
@@ -44,32 +45,26 @@ const NovoCliente = () => {
   };
 
   return (
-    <div className="submit-form">
-      {submitted ? (
-        <div>
-          <h4>Cliente cadastrado com sucesso!</h4>
-          <button className="btn btn-success" onClick={novo}>
-            Novo
-          </button>
-        </div>
-      ) : (
-        <div>
-          <div className="form-group">
-            <label htmlFor="nome">nome</label>
-            <input type="text" className="form-control" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" />
-          </div>
+        <div className="submit-form">
+          {submitted ? (
+            <div>
+              <h4>Cliente cadastrado com sucesso!</h4>
+              <button className="btn btn-success" onClick={novo}>
+                Novo
+              </button>
+            </div>
+          ) : (
+            <div>
+              <input type="text" className="inline form-control border-0 border-bottom mb-3" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
-          <div className="form-group mt-4">
-            <label htmlFor="telefone">Telefone</label>
-            <input type="text" className="form-control" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" />
-          </div>
+              <input type="telephone" className="form-control border-0 border-bottom mb-3" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
 
-          <button onClick={enviarCliente} className="btn btn-success mt-4">
-            Cadastrar
-          </button>
+              <button onClick={enviarCliente} className="botao">
+                Enviar
+              </button>
+            </div>
+          )}
         </div>
-      )}
-    </div>
   );
 };
 
