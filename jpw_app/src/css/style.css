@@ -8,10 +8,6 @@
     padding: 0px;
     box-sizing: border-box; 
 }
-
-.carousel {
-    width: 1000px; margin: 0 auto;
-}
 header h2 {
     font-size: clamp(0.2rem, 1rem + 0.75vw, 2rem);
   }

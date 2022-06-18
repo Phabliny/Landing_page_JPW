@@ -13,7 +13,7 @@ export default class Section3 extends Component {
                             <img src="../../img/logo_power.png" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
                             <img src="../../img/logo_kisafix.jpeg" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
                             <img src="../../img/logo_new-fix.jpeg" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
-                            <img src="../../img/logo_ciser.png" class="img_marca p-2 col-7col-md-5 col-lg-3"/>
+                            <img src="../../img/logo_ciser.png" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
                             <img src="../../img/logo_orbi.png" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
                             <img src="../../img/logo_alltape.png" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
                             <img src="../../img/logo_jo-marcas.png" class="img_marca p-2 col-7 col-md-5 col-lg-3"/>
