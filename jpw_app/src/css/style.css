@@ -56,16 +56,9 @@ p {
     font-family: 'Barlow', sans-serif;
     color: black;
 }
-
 .img_marca {
     width: 30vw;
     margin: 0 0 5vw 0;
-}
-form input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
 }
 .botao {
     margin: 0px;
@@ -174,4 +167,11 @@ footer{
     .map-responsive{
         padding-bottom:17.2%;
     }
+}
+.logozap {
+    z-index: 10;
+    float: right;
+    position: fixed;
+    width: 20%;
+    margin-left: 36%;
 }

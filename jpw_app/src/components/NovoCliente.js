@@ -54,18 +54,18 @@ const NovoCliente = () => {
               </button>
             </div>
           ) : (
-            <div>
-              <input type="text" className="inline form-control border-0 border-bottom mb-3" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
+            <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
+              <input type="text" className="border-0 border-bottom mx-3" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
-              <input type="telephone" className="form-control border-0 border-bottom mb-3" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
+              <input type="telephone" className="border-0 border-bottom  mx-2" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
 
-              <button onClick={enviarCliente} className="botao">
+              <button onClick={enviarCliente} className="botao mx-2">
                 Enviar
               </button>
             </div>
           )}
         </div>
-  );
+  ); 
 };
 
 export default NovoCliente;
