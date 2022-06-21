@@ -7,6 +7,13 @@ const httpClient = axios.create({
   }
 });
 
+const token = axios.create({
+  baseURL: "http://localhost:8080/",
+  headers: {
+    "Content-type": "application/json",
+  }
+});
+
 export const getAll = () => {
   return httpClient.get("/cliente");
 };
@@ -17,4 +24,8 @@ export const get = (id) => {
 
 export const create = (data) => {
   return httpClient.post("/cliente", data);
+};
+
+export const login = (data) => {
+  return token.post("/token", data);
 };
