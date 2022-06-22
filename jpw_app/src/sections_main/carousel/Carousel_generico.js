@@ -8,10 +8,11 @@ export default class Carousel_generico extends Component {
     }
     render() {
         return (
-            <div class="">
-                    <div>
-                    <img src={this.state.carousel[this.props.id].img}/>
-                    </div>
+            <div class="div-img">
+                <div class="">
+                    <img src={this.state.carousel[this.props.id].img} class="img_carrosel"/>
+                    <p class='texto-carrosel'>{this.state.carousel[this.props.id].titulo}</p>
+                </div>
             </div>
         );
     }

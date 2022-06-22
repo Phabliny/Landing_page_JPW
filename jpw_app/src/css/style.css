@@ -65,6 +65,22 @@ p {
     width: 30vw;
     margin: 0 0 5vw 0;
 }
+.texto-carrosel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: red;
+}
+.img_carrosel{
+    position: relative;
+    width: 150%;
+    border: 1px solid black;
+}
+.div-img{
+    border: 1px solid black;
+}
 .botao {
     margin: 0px;
     width: 80px;
