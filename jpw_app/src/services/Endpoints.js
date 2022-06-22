@@ -1,4 +1,5 @@
 import axios from "axios";
+import * as AxiosLogger from "axios-logger";
 
 const httpClient = axios.create({
   baseURL: "http://localhost:8080/jpw",
@@ -6,6 +7,7 @@ const httpClient = axios.create({
     "Content-type": "application/json",
   }
 });
+httpClient.interceptors.request.use(AxiosLogger.requestLogger, AxiosLogger.errorLogger);
 
 const token = axios.create({
   baseURL: "http://localhost:8080/",
@@ -13,6 +15,8 @@ const token = axios.create({
     "Content-type": "application/json",
   }
 });
+token.interceptors.request.use(AxiosLogger.requestLogger, AxiosLogger.errorLogger)
+token.interceptors.response.use(AxiosLogger.responseLogger, AxiosLogger.errorLogger)
 
 export const getAll = () => {
   return httpClient.get("/cliente");
@@ -27,5 +31,10 @@ export const create = (data) => {
 };
 
 export const login = (data) => {
-  return token.post("/token", data);
+  return token.post("/token", {}, {
+    auth: {
+      username: data.nome,
+      password: data.senha
+    }
+  });
 };
