@@ -54,10 +54,10 @@ const NovoCliente = () => {
               </button>
             </div>
           ) : (
-            <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
-              <input type="text" className="border-0 border-bottom mx-3" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
+            <div class="">
+              <input type="text" className="border-0 border-bottom mt-lg-5" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
-              <input type="telephone" className="border-0 border-bottom  mx-2" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
+              <input type="telephone" className="border-0 border-bottom" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
 
               <button onClick={enviarCliente} className="botao mx-2">
                 Enviar

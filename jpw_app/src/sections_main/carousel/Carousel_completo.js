@@ -18,6 +18,9 @@ class Carousel_completo extends Component {
                 <div class="item">
                     <Carousel_generico id="2"/>
                 </div>
+                <div class="item">
+                    <Carousel_generico id="3"/>
+                </div>
                 </Carousel>
             </div>
         );
