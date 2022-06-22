@@ -1,15 +1,19 @@
 {
     "carousel":[
         {
-            "img": "../../img/locali.png",
+            "img": "../../img/marcenaria.jpg",
             "titulo": "ONDE ESTAMOS?"
         },
         {
-            "img": "../../img/telefone.png",
+            "img": "../../img/marmoraria.jpg",
             "titulo": "FALE CONOSCO"
         },
         {
-            "img": "../../img/email.png",
+            "img": "../../img/serralheria.jpg",
+            "titulo": "EMAIL"
+        },
+        {
+            "img": "../../img/vidraçaria.jpeg",
             "titulo": "EMAIL"
         }
 ]

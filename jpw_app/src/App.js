@@ -9,7 +9,9 @@ export default class App extends Component {
   render() {
     return (
       <div> 
-        <Login />
+        <Header />
+        <Main />
+        <Footer />
       </div>
       )
     }

@@ -5,7 +5,7 @@ import '../css/ourstrap.css'
 export default class Section_marcas extends Component {
     render() {
         return (
-            <div class="container py-5">
+            <div class="container py-sm-1 py-md-3 py-lg-5">
                 <div class="row justify-content-center align-items-center py-5">
                     <h1>PRINCIPAIS MARCAS</h1>
                     <h2>(TRABALHAMOS COM AS MELHORES MARCAS DO MERCADO)</h2>
