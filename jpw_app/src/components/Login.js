@@ -36,10 +36,10 @@ const Login = () => {
               <h4>Usuário logado!</h4>
             </div>
           ) : (
-            <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
-              <input type="text" className="border-0 border-bottom mx-3" id="nome" required value={user.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
+            <div class="">
+              <input type="text" className="form-input border-0 border-bottom mx-3" id="nome" required value={user.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
-              <input type="password" className="border-0 border-bottom  mx-2" id="senha" required value={user.senha} onChange={trataCampo} name="senha" placeholder="Senha"/>
+              <input type="password" className="form-input border-0 border-bottom mx-2" id="senha" required value={user.senha} onChange={trataCampo} name="senha" placeholder="Senha"/>
 
               <button onClick={logar} className="botao mx-2">
                 Enviar
