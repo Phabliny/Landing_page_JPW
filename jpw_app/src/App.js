@@ -8,10 +8,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Header />
+         <Header />
         <Main />
-        <Footer /> */}
-        <Login />
+        <Footer /> 
+        {/*<Login />*/}
       </div>
     )
   }
