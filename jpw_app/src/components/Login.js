@@ -3,6 +3,7 @@ import * as api from "../services/Endpoints";
 import '../css/style.css'
 
 const Login = () => {
+
   const estadoInicial = {
     nome: "",
     senha: ""
@@ -20,7 +21,6 @@ const Login = () => {
     api
       .login(user)
       .then((response) => {
-        setUser(response.data)
         setSubmitted(true);
         console.log(response.data + "response.data --------------------------");
       })

@@ -100,6 +100,18 @@ footer{
     margin: 0;
     padding: 0;
 }
+.textos_footer {
+    padding-left: 2.5vw;
+}
+.icone {
+    width: clamp(0.8rem, 0.7rem + 2vw, 2.7rem); 
+}
+.textos_footer h5{
+    font-size: clamp(0.3rem, 0.7rem + 0.30vw, 1.3rem);
+}
+.textos_footer p{
+    font-size: clamp(0.1rem, 0.6rem + 0.20vw, 1rem);
+}
 .fim_footer{
     background-color: black;
     color: white;
@@ -107,10 +119,6 @@ footer{
 }
 .fim_footer p{
     color: white;
-}
-
-.textos_footer {
-    padding-left: 2.5vw;
 }
 .logozap {
     float: right;
@@ -125,6 +133,12 @@ footer{
 iframe {
     height:fit-content;
 }
+.fundo_produtos {
+    background-color: rgba(253, 214, 169, 0.4)
+}
+.fundo_loja_movel {
+    background-color: rgba(253, 214, 169, 0.7)
+}
 @media screen and (min-width: 600px) {
     .mapa {
         width:100%;
@@ -135,7 +149,7 @@ iframe {
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1000px) {
     .container {
         border: 1px solid black;
         padding-top: 10vh;

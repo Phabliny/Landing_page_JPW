@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/style.css'
 import '../css/ourstrap.css'
 
-export default class Section3 extends Component {
+export default class Section_marcas extends Component {
     render() {
         return (
             <div class="container py-5">
