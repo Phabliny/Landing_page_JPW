@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import * as api from "../services/Endpoints";
 import '../css/login.css'
+import Teste from './Teste'
 
-const Login = () => {
+const Login = ({ submitted, setSubmitted }) => {
 
   const estadoInicial = {
     nome: "",
-    senha: ""
+    senha: "",
   };
   const [user, setUser] = useState(estadoInicial);
-  const [submitted, setSubmitted] = useState(false);
-
+  const [erro, setErro] = useState("");
+  
   const trataCampo = (event) => {
     const { name, value } = event.target;
     setUser({ ...user, [name]: value });
   };
+
+  useEffect(() => {
+    console.log("useEffect (" + localStorage.getItem("jwtToken")+")");
+    if (localStorage.getItem("jwtToken") !== null) setSubmitted(true);
+    else setSubmitted(false);
+  }, []);
 
   const logar = () => {
     console.log(user);
@@ -22,18 +29,25 @@ const Login = () => {
       .login(user)
       .then((response) => {
         setSubmitted(true);
-        console.log(response.data + "response.data --------------------------");
+        console.log(response.data);
+        localStorage.setItem("jwtToken", response.data);
       })
       .catch((e) => {
-        console.log(e);
+        console.log("Erro: -------------------------- " + e);
+        setErro("Usuário e/ou senha errado(s)");
       });
   };
 
+  const logout = () => {
+    console.log("saindo ....")
+    localStorage.removeItem("jwtToken");
+    setSubmitted(false);
+  };
   return (
         <div className="submit-form">
           {submitted ? (
             <div>
-              <h4>Usuário logado!</h4>
+              <Teste submitted={setSubmitted}/>
             </div>
           ) : (
             <div className="Auth-form-container">
