@@ -8,7 +8,7 @@ export default class Carousel_generico extends Component {
     }
     render() {
         return (
-            <div class="">
+            <div className="">
                     <div>
                     <img src={this.state.carousel[this.props.id].img}/>
                     </div>

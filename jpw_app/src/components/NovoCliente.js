@@ -6,7 +6,8 @@ const NovoCliente = () => {
   const estadoInicialCliente = {
     id: null,
     nome: "",
-    telefone: ""
+    telefone: "",
+    localDateTime: "",
   };
   const [cliente, setCliente] = useState(estadoInicialCliente);
   const [submitted, setSubmitted] = useState(false);
@@ -54,7 +55,7 @@ const NovoCliente = () => {
               </button>
             </div>
           ) : (
-            <div class="">
+            <div className="">
               <input type="text" className="border-0 border-bottom mt-lg-5" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
               <input type="telephone" className="border-0 border-bottom" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
