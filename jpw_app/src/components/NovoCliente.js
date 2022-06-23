@@ -31,10 +31,8 @@ const NovoCliente = () => {
       .create(data)
       .then((response) => {
         setCliente({
-          id: response.data.id,
           nome: response.data.nome,
           telefone: response.data.telefone,
-          localDateTime: response.data.localDateTime
         });
         setSubmitted(true);
         console.log(response.data);
