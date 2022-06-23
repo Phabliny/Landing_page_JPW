@@ -29,6 +29,7 @@ const Login = ({ submitted, setSubmitted }) => {
         setSubmitted(true);
         console.log(response.data);
         localStorage.setItem("jwtToken", response.data);
+        setErro("")
       })
       .catch((e) => {
         console.log("Erro: -------------------------- " + e);
