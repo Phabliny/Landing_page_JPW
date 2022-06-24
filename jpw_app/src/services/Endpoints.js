@@ -25,7 +25,7 @@ token.interceptors.request.use(AxiosLogger.requestLogger, AxiosLogger.errorLogge
 token.interceptors.response.use(AxiosLogger.responseLogger, AxiosLogger.errorLogger);
 
 export const getAll = () => {
-  return httpClient.get("/clientes", { headers: { Authorization: "Bearer " + localStorage.getItem("jwtToken") } });
+  return httpClient.get("/cliente", { headers: { Authorization: "Bearer " + localStorage.getItem("jwtToken") } });
 };
 
 export const create = (data) => {
@@ -33,7 +33,7 @@ export const create = (data) => {
 };
 
 export const exportExcel = () =>{
-  return httpClient.get(`/admin/clientes/export/excel`);
+  return httpClient.get(`/clientes/export/excel`);
 }
 
 export const login = (data) => {

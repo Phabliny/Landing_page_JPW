@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import React from 'react'
 import * as api from "../services/Endpoints";
-
-const Teste = ({ submitted }) => {
+import axios from "axios";
+ 
+const AcessoUser= ({ submitted }) => {
   const [clientes, setClientes] = useState([]);
+  const FileDownload = require('js-file-download');
 
   const buscarClientes = () => {
     api.getAll().then((resp) => {
@@ -11,21 +14,27 @@ const Teste = ({ submitted }) => {
     });
   };
 
-  const logout = () => {
+  const exportar = () => {
+    axios({
+      url: "http://localhost:8080/jpw/clientes/export/excel",
+      method: "GET",
+      responseType: "blob",
+
+    }).then((res) => {
+      FileDownload(res.data, `teste.xlsx`)
+    })
+  }
+
+       const logout = () => {
     console.log("saindo ....")
     localStorage.removeItem("jwtToken");
     submitted(false);
   };
 
-  const baixarExcel = () => {
-    api.exportExcel().then((resp) => {
-      console.log(resp);
-    });
-  }
-
   useEffect(() => {
     setClientes([]);
   }, [submitted]);
+
 
   return (
     <>
@@ -35,8 +44,8 @@ const Teste = ({ submitted }) => {
           <button onClick={logout} className="botao mx-2">
             Sair
           </button>
-          <button onClick={baixarExcel} className="botao mx-2" style={{ width: "200px" }}>
-            Baixar o arquivo Excel
+          <button onClick={exportar} className="botao mx-2">
+            Exportar
           </button>
       {submitted && clientes.length === 0 && (
         <>
@@ -55,4 +64,4 @@ const Teste = ({ submitted }) => {
   );
 };
 
-export default Teste;
+export default AcessoUser;

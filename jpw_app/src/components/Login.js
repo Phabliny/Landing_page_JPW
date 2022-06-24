@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from "react";
 import * as api from "../services/Endpoints";
 import '../css/login.css'
-import Teste from './Teste'
+import AcessoUser from './AcessoUser'
 
 const Login = ({ submitted, setSubmitted }) => {
 
@@ -47,7 +47,7 @@ const Login = ({ submitted, setSubmitted }) => {
         <div className="submit-form">
           {submitted ? (
             <div>
-              <Teste submitted={setSubmitted}/>
+              <AcessoUser submitted={setSubmitted}/>
             </div>
           ) : (
             <div className="Auth-form-container">
