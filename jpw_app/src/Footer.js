@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './css/style.css'
-import './css/ourstrap.css'
 import Elemento_completo from './componente_footer/Elemento_completo';
 
 export default class Footer extends Component {

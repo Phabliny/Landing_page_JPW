@@ -21,7 +21,7 @@ const AcessoUser= ({ submitted }) => {
       responseType: "blob",
 
     }).then((res) => {
-      FileDownload(res.data, `teste.xlsx`)
+      FileDownload(res.data, `Clientes_JPW.xlsx`)
     })
   }
 
@@ -41,11 +41,11 @@ const AcessoUser= ({ submitted }) => {
     <button onClick={buscarClientes} className="botao mx-2 mb-3" style={{ width: "200px" }}>
             Buscar clientes
           </button>
-          <button onClick={logout} className="botao mx-2">
-            Sair
-          </button>
           <button onClick={exportar} className="botao mx-2">
             Exportar
+          </button>
+          <button onClick={logout} className="botao mx-2">
+            Sair
           </button>
       {submitted && clientes.length === 0 && (
         <>

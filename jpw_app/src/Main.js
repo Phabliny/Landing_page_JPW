@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './css/style.css'
-import './css/ourstrap.css'
 import Section_empresa from './sections_main/Section_empresa'
 import Section_produtos from './sections_main/Section_produtos'
 import Section_marcas from './sections_main/Section_marcas'

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../css/style.css'
-import '../css/ourstrap.css'
 
 export default class Section_loja_movel extends Component {
     render() {

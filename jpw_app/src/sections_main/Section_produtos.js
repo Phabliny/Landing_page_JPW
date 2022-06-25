@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../css/style.css'
-import '../css/ourstrap.css'
 import Carousel_completo from './carousel/Carousel_completo';
 
 export default class Section_produtos extends Component {

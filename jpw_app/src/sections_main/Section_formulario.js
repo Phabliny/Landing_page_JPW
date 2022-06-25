@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../css/style.css'
-import '../css/ourstrap.css'
 import NovoCliente from "../components/NovoCliente";
 
 export default class Section_formulario extends Component {
