@@ -52,8 +52,7 @@ const NovoCliente = () => {
         title: 'Sucesso',  
         icon: 'success',   
         text: 'Formulario enviado com sucesso',  
-      });  
-
+});  
     var data = {
       nome: cliente.nome,
       telefone: cliente.telefone
@@ -72,6 +71,7 @@ const NovoCliente = () => {
       .catch((e) => {
         console.log(e);
       });
+      novo();
   };
   }
   return (

@@ -128,6 +128,7 @@ footer{
 }
 .icone {
     width: clamp(0.8rem, 0.7rem + 2vw, 2.7rem); 
+    margin-bottom: 20px;
 }
 .textos_footer h5{
     font-size: clamp(0.3rem, 0.7rem + 0.30vw, 1.3rem);
@@ -232,6 +233,18 @@ iframe {
     p{
         font-size: 13px;
     }
+    .botao {
+        margin: 0px;
+        width: 60px;
+        height: 25px;
+        color: white;
+        background-color: #DA811A;
+        border:none;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
     header {
         height: 200px;
     }
@@ -267,9 +280,9 @@ iframe {
     max-width: 50%;
     }
     input {
-        display: inline-block;
+        display: block;
         margin-right: 1.2vw !important;
-        width: 20vw;
+        width: 30vw;
         margin-bottom: 3vw !important;
     }
 
@@ -284,4 +297,5 @@ iframe {
 }
 .forms {
     overflow: hidden;
+    margin-top: 15%;
 }

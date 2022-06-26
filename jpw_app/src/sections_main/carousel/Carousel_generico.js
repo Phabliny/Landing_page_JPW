@@ -16,4 +16,27 @@ export default class Carousel_generico extends Component {
             </div>
         );
     }
+    componentDidMount(){
+        const idCarrosel = this.state.carousel[this.props.id].titulo;
+
+        switch(idCarrosel){
+            case 1:
+                console.log(idCarrosel)
+                break;
+                
+                case 2:
+                    console.log(idCarrosel)
+                    break;
+
+                    case 3:
+                        console.log(idCarrosel)
+                        break;
+
+                        case 4:
+                            console.log(idCarrosel)
+                            break;
+            
+        }
+
+    }
 }
