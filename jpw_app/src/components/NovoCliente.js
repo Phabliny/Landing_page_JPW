@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 import * as api from "../services/Endpoints";
 import '../css/style.css'
+import swal from 'sweetalert2';
 
+const tel = document.getElementById('telefone')
+tel.addEventListener('keypress', (e) => mascaraTelefone(e.target.value))
+tel.addEventListener('change', (e) => mascaraTelefone(e.target.value))
+
+const mascaraTelefone = (valor) => {
+    valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
+    valor = valor.replace(/(\d)(\d{4})$/, "$1$2")
+    tel.value = valor 
+}
 const NovoCliente = () => {
   const estadoInicialCliente = {
     id: null,
@@ -22,6 +32,28 @@ const NovoCliente = () => {
   };
 
   const enviarCliente = () => {
+    if(cliente.telefone.length<12){
+      swal.fire({  
+        title: 'Algo deu errado',  
+        icon: 'error',
+        text: 'O campo telefone precisa ter mais de 10 números, favor preenche-lo corretamente',  
+      });  
+      
+    }
+    else if(cliente.nome.length<1){
+      swal.fire({  
+        title: 'Algo deu errado',  
+        icon: 'error',  
+        text: 'O campo nome precisa ter mais de 1 letra, favor preenche-lo corretamente',  
+      });  
+    }
+    else {
+      swal.fire({  
+        title: 'Sucesso',  
+        icon: 'success',   
+        text: 'Formulario enviado com sucesso',  
+      });  
+
     var data = {
       nome: cliente.nome,
       telefone: cliente.telefone
@@ -41,7 +73,7 @@ const NovoCliente = () => {
         console.log(e);
       });
   };
-
+  }
   return (
         <div className="submit-form">
           {submitted ? (
@@ -52,12 +84,12 @@ const NovoCliente = () => {
               </button>
             </div>
           ) : (
-            <div class="">
+            <div class="forms">
               <input type="text" className="border-0 border-bottom mt-lg-5" id="nome" required value={cliente.nome} onChange={trataCampo} name="nome" placeholder="Nome"/>
 
-              <input type="telephone" className="border-0 border-bottom" id="telefone" required value={cliente.telefone} onChange={trataCampo} name="telefone" placeholder="Telefone"/>
+              <input type="telephone" className="border-0 border-bottom" id="telefone" required value={cliente.telefone} maxlength="14" onChange={trataCampo} name="telefone" placeholder="Telefone"/>
 
-              <button onClick={enviarCliente} className="botao mx-2">
+              <button onClick={enviarCliente} className="botao mx-2 text-center">
                 Enviar
               </button>
             </div>

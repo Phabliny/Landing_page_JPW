@@ -1,19 +1,19 @@
 {
     "carousel":[
         {
-            "img": "../../img/marcenaria.jpg",
-            "titulo": "ONDE ESTAMOS?"
+            "img": "../../img/marcenaria.png",
+            "titulo": "Vendemos parafusos broca disco marcenaria prioreosaj ksjdajdsakdjsa kjsdk jaskd sakd jhsald jhsald nsald haslkdhsalkdhj slakhd lksahd lksahjd lkashjd "
         },
         {
-            "img": "../../img/marmoraria.jpg",
+            "img": "../../img/marmoraria.png",
             "titulo": "FALE CONOSCO"
         },
         {
-            "img": "../../img/serralheria.jpg",
+            "img": "../../img/serralheria.png",
             "titulo": "EMAIL"
         },
         {
-            "img": "../../img/vidraçaria.jpeg",
+            "img": "../../img/vidracaria.png",
             "titulo": "EMAIL"
         }
 ]

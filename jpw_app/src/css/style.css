@@ -7,6 +7,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
+    font-size: clamp(1em, 0.1em + 1vw, 1.5em);
 }
 header h2 {
     font-size: clamp(0.2rem, 1rem + 0.75vw, 2rem);
@@ -16,6 +17,7 @@ header {
     padding: 0;
     width: auto;
     height: auto;
+    margin: 0;
     max-width: 100%;
     text-align: center;
     background-size: cover;    
@@ -26,8 +28,8 @@ header div {
     margin-right: auto;
 }
 .container {
-    padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 main h1{
     font-family: 'Playfair Display SC', serif;
@@ -52,7 +54,6 @@ main h2 {
 .negrito {
     font-weight: bolder;
 }
-
 .foto_wellington {
     border-radius: 100%;
 }
@@ -64,14 +65,14 @@ p {
 .img_marca {
     width: 30vw;
     margin: 0 0 5vw 0;
+    max-width: 50%;
 }
 .texto-carrosel{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .img_carrosel{
     position: relative;
@@ -106,6 +107,9 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.img_van{
+    width: 100%;
 }
 .elemento_footer {
     display: flex;
@@ -171,7 +175,7 @@ iframe {
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:990px) {
     .container {
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -198,6 +202,7 @@ iframe {
         margin-bottom: 1vw;
         margin-left: auto;
         margin-right: auto;
+
     }
     input {
         display: inline-block;
@@ -214,4 +219,69 @@ iframe {
         margin-right: 5%;
         margin-bottom: 2%;
     }
+}
+@media screen and (max-width:599px) {
+    html, body{
+        margin:0px !important;
+        padding: 0px !important;
+     }
+    .caixa{
+        width: 55vw;
+        flex-direction: row;
+    }
+    p{
+        font-size: 13px;
+    }
+    header {
+        height: 200px;
+    }
+    header h2 {
+        font-size: clamp(0.1rem, 0.5rem + 0.6vw, 2rem);
+    }
+    .botao {
+        margin-left: 500px;
+    }
+    .logo{
+        width: auto;
+        height: 50%;
+
+    }
+    .foto_wellington {
+        border-radius: 100%;
+    }
+    .marcas{
+        width: 55vw;
+        margin-top: 1.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .img_marca {
+            width: 14vw;
+    margin-bottom: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    }
+    input {
+        display: inline-block;
+        margin-right: 1.2vw !important;
+        width: 20vw;
+        margin-bottom: 3vw !important;
+    }
+
+    .caixa_footer{
+        width: 100%;
+        flex-direction: row;
+    }
+    .logozap {
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+}
+.forms {
+    overflow: hidden;
 }
