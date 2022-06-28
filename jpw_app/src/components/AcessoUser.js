@@ -25,7 +25,7 @@ const AcessoUser= ({ submitted }) => {
     })
   }
 
-       const logout = () => {
+  const logout = () => {
     console.log("saindo ....")
     localStorage.removeItem("jwtToken");
     submitted(false);

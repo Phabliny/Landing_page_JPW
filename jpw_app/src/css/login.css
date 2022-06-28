@@ -37,3 +37,11 @@
     font-weight: 600;
     color: rgb(34, 34, 34);
   }
+
+  .login-logo {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .input-login {
+    margin-bottom: 1.5vh !important;
+  }

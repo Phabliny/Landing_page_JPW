@@ -12,7 +12,7 @@
 header h2 {
     font-size: clamp(0.2rem, 1rem + 0.75vw, 2rem);
   }
-header {
+header{
     background-image: url('../../public/img/fundo_header.png');
     padding: 0;
     width: auto;
@@ -144,6 +144,9 @@ footer{
 .fim_footer p{
     color: white;
 }
+.none{
+    display: flex;    
+}
 .logozap {
     float: right;
     position: fixed;
@@ -184,6 +187,9 @@ iframe {
     .caixa{
         width: 55vw;
         flex-direction: row;
+    }
+    .none{
+        display: none;
     }
     .foto_wellington {
         border-radius: 0%;
@@ -297,5 +303,4 @@ iframe {
 }
 .forms {
     overflow: hidden;
-    margin-top: 15%;
 }
